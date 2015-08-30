@@ -48,6 +48,10 @@ public class ServletRequestInfo extends HttpServlet {
 				.print("<div><label><b>2.</b></label><a href="
 						+ request.getContextPath()
 						+ "/servletRequestHeaderInfo target=_black> Display All Header Information.</a></div>");
+		printWriter
+		.print("<div><label><b>3.</b></label><a href="
+				+ request.getContextPath()
+				+ "/servletRequestAttributeDemo target=_black> Servlet Request Attribute</a></div>");
 		printWriter.print("</body></html>");
 		printWriter.close();
 	}

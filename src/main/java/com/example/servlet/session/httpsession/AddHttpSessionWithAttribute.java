@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.example.servlet.listner.HttpSessionBindingListenerDemo;
 import com.example.servlet.utils.HttpSessionInfo;
 
 /**
@@ -61,6 +62,11 @@ public class AddHttpSessionWithAttribute extends HttpServlet {
 				"FirstName", firstName, true);
 		HttpSessionInfo.setHttpSessionAttribute(httpSession, "LastName",
 				lastName, true);
+
+		httpSession.setAttribute("Test", new HttpSessionBindingListenerDemo(
+				request.getServletContext()));
+
+		httpSession.removeAttribute("Test");
 
 		printWriter
 				.print("<div align='center'><h2>Create Http Session With Attribute</h2></div>");

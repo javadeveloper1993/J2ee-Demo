@@ -1,4 +1,4 @@
-package com.example.servlet;
+package com.example.servlet.servletcontext;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -44,6 +44,7 @@ public class ApplicationScopeAttributeDemo extends HttpServlet {
 
 		// TODO Create Application Scope Attribute
 		servletContext.setAttribute("appType", "J2EE");
+		servletContext.setAttribute("Test", "Test Value");
 		servletContext.setAttribute(
 				"servletVersion",
 				servletContext.getMajorVersion() + "."
@@ -67,6 +68,10 @@ public class ApplicationScopeAttributeDemo extends HttpServlet {
 				+ servletVersionAttribute + "</div>");
 
 		servletContext.removeAttribute("appType");
+		
+		servletContext.setAttribute("Test", "Again Test Value");
+		
+		
 		String afterAppTypeAttribute = (String) servletContext
 				.getAttribute("appType");
 		String afterServletVersionAttribute = (String) servletContext
