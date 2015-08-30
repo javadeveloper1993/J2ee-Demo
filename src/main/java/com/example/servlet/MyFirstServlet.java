@@ -37,6 +37,7 @@ public class MyFirstServlet extends HttpServlet {
 		System.out.println(" >>> getServletContext().getContextPath() :: "
 				+ getServletContext().getContextPath());
 		response.setContentType("text/html");
+		response.setIntHeader("Refresh", 15);
 		PrintWriter printWriter = response.getWriter();
 		printWriter.print("<html><body>");
 		printWriter.print("<h3>This is my first servlet demo.</h3>");
