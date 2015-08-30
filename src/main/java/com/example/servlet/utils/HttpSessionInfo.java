@@ -47,7 +47,7 @@ public class HttpSessionInfo {
 					+ expiry;
 			servletContextInfo += "<div><b> 6. isNew : </b>"
 					+ httpSession.isNew();
-			servletContextInfo += "<div><b> 7. Http Session Arrtibute</b>";
+			servletContextInfo += "<div><b> 7. Http Session Arrtibute</b></div>";
 
 			Enumeration<String> attributeNames = httpSession
 					.getAttributeNames();
