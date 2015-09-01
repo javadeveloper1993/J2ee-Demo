@@ -103,5 +103,34 @@
 			</div>
 	
 	</div>
+	
+	<div align="center">
+		<h2>Index For JSP Demo</h2>
+	</div>
+	
+	<!-- JSP Demo List  -->
+	<div>
+
+		<div class="divMarginTop">
+			<label><b>1.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/scriptetJspDemo.jsp'
+				target="_black"> Scriptet Demo</a>
+		</div>
+		
+		<div class="divMarginTop">
+			<label><b>2.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/implicitObjectDemo.jsp'
+				target="_black"> Implicit Object Demo</a>
+		</div>
+		
+		<div class="divMarginTop">
+			<label><b>3.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/pageDirective.jsp'
+				target="_black"> @Page Directive Demo</a>
+		</div>
+		
+	</div>
+	
+	
 </body>
 </html>
