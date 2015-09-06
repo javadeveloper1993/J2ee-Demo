@@ -45,19 +45,19 @@
 	<!-- </filter-mapping> -->
 
 
-<!-- 	<servlet> -->
-<!-- 		<servlet-name>implicitJsp</servlet-name> -->
-<!-- 		<jsp-file>/pages/jsp/demo/implicitObjectDemo.jsp</jsp-file> -->
-<!-- 		<init-param> -->
-<!-- 			<param-name>test</param-name> -->
-<!-- 			<param-value>test-value</param-value> -->
-<!-- 		</init-param> -->
-<!-- 	</servlet> -->
+	<!-- <servlet> -->
+	<!-- <servlet-name>implicitJsp</servlet-name> -->
+	<!-- <jsp-file>/pages/jsp/demo/implicitObjectDemo.jsp</jsp-file> -->
+	<!-- <init-param> -->
+	<!-- <param-name>test</param-name> -->
+	<!-- <param-value>test-value</param-value> -->
+	<!-- </init-param> -->
+	<!-- </servlet> -->
 
-<!-- 	<servlet-mapping> -->
-<!-- 		<servlet-name>implicitJsp</servlet-name> -->
-<!-- 		<url-pattern>/pages/jsp/demo/implicitObjectDemo.jsp</url-pattern> -->
-<!-- 	</servlet-mapping> -->
+	<!-- <servlet-mapping> -->
+	<!-- <servlet-name>implicitJsp</servlet-name> -->
+	<!-- <url-pattern>/pages/jsp/demo/implicitObjectDemo.jsp</url-pattern> -->
+	<!-- </servlet-mapping> -->
 
 	<servlet>
 		<servlet-name>MyFirstServlet</servlet-name>
@@ -98,4 +98,12 @@
 		<tracking-mode>URL</tracking-mode>
 		<tracking-mode>COOKIE</tracking-mode>
 	</session-config>
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>myCustomeDate</taglib-uri>
+			<taglib-location>/WEB-INF/myTags.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
 </web-app>

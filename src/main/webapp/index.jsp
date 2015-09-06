@@ -159,6 +159,18 @@
 				target="_black"> Jsp : Use Bean (Set Property & Get Property)</a>
 		</div>
 		
+		<div class="divMarginTop">
+			<label><b>9.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/jspJslt.jsp'
+				target="_black"> Jsp : JSTL</a>
+		</div>
+		
+		<div class="divMarginTop">
+			<label><b>10.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/jspJsltCustome.jsp'
+				target="_black"> Jsp : Custome JSTL Tag</a>
+		</div>
+		
 	</div>
 	
 	
