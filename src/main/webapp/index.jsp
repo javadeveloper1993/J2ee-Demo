@@ -129,6 +129,36 @@
 				target="_black"> @Page Directive Demo</a>
 		</div>
 		
+		<div class="divMarginTop">
+			<label><b>4.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/includeDirective.jsp'
+				target="_black"> @Include Directive Demo</a>
+		</div>
+		
+		<div class="divMarginTop">
+			<label><b>5.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/jspForward.jsp'
+				target="_black"> Jsp:Forward</a>
+		</div>
+		
+		<div class="divMarginTop">
+			<label><b>6.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/jspInclude.jsp'
+				target="_black"> Jsp:Include</a>
+		</div>
+		
+		<div class="divMarginTop">
+			<label><b>7.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/jspUseBean.jsp'
+				target="_black"> Jsp : Use Bean</a>
+		</div>
+		
+		<div class="divMarginTop">
+			<label><b>8.</b></label><a
+				href='${pageContext.request.contextPath}/pages/jsp/demo/jspUseBeanSetGetProperty.jsp'
+				target="_black"> Jsp : Use Bean (Set Property & Get Property)</a>
+		</div>
+		
 	</div>
 	
 	
